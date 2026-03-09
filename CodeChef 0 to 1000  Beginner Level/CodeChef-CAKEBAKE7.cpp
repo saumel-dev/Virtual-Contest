@@ -16,6 +16,7 @@ typedef double dl;
 #define mem(a,b) memset(a, b, sizeof(a))
 #define check cout << "-__________________-" << endl
 
+
 void solve()
 {
     int n, m; cin >> n >> m;
