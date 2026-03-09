@@ -19,23 +19,19 @@ typedef double dl;
 
 void solve()
 {
-    int n, x, y; cin >> n >> x >> y;
-    if(y / x == 1)
-    {
-        cout << n << endl;
-    }
-    else
-    {
-        int temp = y / x;
-        cout << ((n % temp == 0)? n / temp: (n / temp) + 1) << endl;
-    }
+    int x, y; cin >> x >> y;
+    int mx_dice = ((y - 1) + 6) + ((y - 1) + 6);
+    int mn_dice = y + y;
+    int val = 50 - x;
+    if(val >= mn_dice && val <= mx_dice) yes;
+    else no;
 }
 int main()
 {
     optimize();
 
     int t = 1;
-    // cin >> t;
+    cin >> t;
     while (t--)
     {
         solve();

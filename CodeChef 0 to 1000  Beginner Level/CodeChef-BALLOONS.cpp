@@ -19,23 +19,22 @@ typedef double dl;
 
 void solve()
 {
-    int n, x, y; cin >> n >> x >> y;
-    if(y / x == 1)
+    int n; cin >> n;
+    vector<int> v(n + 1);
+    int cost = 0;
+    for(int i = 1; i <= n; i++)
     {
-        cout << n << endl;
+        cin >> v[i];
+        cost += v[i] * i;
     }
-    else
-    {
-        int temp = y / x;
-        cout << ((n % temp == 0)? n / temp: (n / temp) + 1) << endl;
-    }
+    cout << cost << endl;
 }
 int main()
 {
     optimize();
 
     int t = 1;
-    // cin >> t;
+    cin >> t;
     while (t--)
     {
         solve();

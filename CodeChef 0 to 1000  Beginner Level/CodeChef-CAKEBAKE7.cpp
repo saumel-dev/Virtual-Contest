@@ -20,13 +20,9 @@ typedef double dl;
 void solve()
 {
     int n, m; cin >> n >> m;
-    if(n * 2 <= m) cout << n << endl;
-    else
-    {
-        n *= 2;
-        n -= m;
-        cout << n << endl;
-    }
+    int temp = m - n;
+    if(temp > n) cout << n << endl;
+    else cout << temp << endl;
 }
 int main()
 {

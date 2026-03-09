@@ -19,15 +19,14 @@ typedef double dl;
 
 void solve()
 {
-    int n, x, y; cin >> n >> x >> y;
-    if(y / x == 1)
+    int x, y; cin >> x >> y;
+    if(y == 1)
     {
-        cout << n << endl;
+        cout << 1 << " " << 0 << endl;
     }
     else
     {
-        int temp = y / x;
-        cout << ((n % temp == 0)? n / temp: (n / temp) + 1) << endl;
+        cout << y - x << " " << y - (y - x) << endl;
     }
 }
 int main()
@@ -35,7 +34,7 @@ int main()
     optimize();
 
     int t = 1;
-    // cin >> t;
+    cin >> t;
     while (t--)
     {
         solve();
