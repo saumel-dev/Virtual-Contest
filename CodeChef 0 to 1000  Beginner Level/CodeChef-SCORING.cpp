@@ -20,14 +20,7 @@ typedef double dl;
 void solve()
 {
     int x, y; cin >> x >> y;
-    if(y == 1)
-    {
-        cout << 1 << " " << 0 << endl;
-    }
-    else
-    {
-        cout << y - x << " " << y - (y - x) << endl;
-    }
+    cout << y - ((y - x) / 2) << " " <<  (y - x) / 2 << endl;
 }
 int main()
 {
